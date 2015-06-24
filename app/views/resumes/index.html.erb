@@ -1,0 +1,50 @@
+<div class="resume">
+  <div class="work" id="work">
+    <div class="work-title">
+      <h3 class="name-work">
+        Education
+      </h3>
+    </div>
+    <% @works.each do |work| %>
+      <%= work.name %>
+      <%= work.local %>
+      <%= work.desc %>
+    <% end %>
+  </div>
+  <div class="education" id="education">
+    <div class="education-title">
+      <h3 class="name-education">
+        Education
+      </h3>
+    </div>
+    <% @educations.each do |education| %>
+      <%= education.name %>
+      <%= education.local %>
+      <%= education.desc %>
+    <% end %>
+  </div>
+  <div class="volunteer" id="volunteer">
+    <div class="volunteer-title">
+      <h3 class="name-volunteer">
+        Volunteer
+      </h3>
+    </div>
+    <% @volunteers.each do |volunteer| %>
+      <%= volunteer.name %>
+      <%= volunteer.local %>
+      <%= volunteer.desc %>
+    <% end %>
+  </div>
+  <div class="experience" id="volunteer">
+    <div class="experience-title">
+      <h3 class="name-experience">
+        Experience
+      </h3>
+    </div>
+    <% @experiences.each do |experience| %>
+      <%= experience.name %>
+      <%= experience.local %>
+      <%= experience.desc %>
+    <% end %>
+  </div>
+</div>

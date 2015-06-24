@@ -1,0 +1,23 @@
+
+<section class="photo-header">
+	<div class="row">
+		<h1 class="name-site">
+			crofis.com
+		</h1>
+		<p class="summary-site">
+			Tecnologia para o futebol <br />
+		</p>
+		<div class="contact">
+			<% @contacts.each do |contact| %>
+			<%= contact.name %> <br>
+			<%= contact.address %> <br>
+			<%= contact.email %> <br>
+			<%= link_to "Linkedin", contact.linkedin %> <br>
+			<%= contact.facebook %> <br>
+			<%= contact.github %> <br>
+			<%= contact.twitter %> <br>
+			<% end %>
+		</div>
+
+	</div>
+</section>
